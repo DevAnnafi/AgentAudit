@@ -1,0 +1,52 @@
+# Secrets and local config (never commit these)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+credentials
+credentials.json
+.aws/
+aws-exports.*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# Node
+node_modules/
+.next/
+out/
+.npm/
+npm-debug.log*
+
+# Infrastructure as code build output
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!example.tfvars
+cdk.out/
+.aws-sam/
+.serverless/
+cdk.context.json
+
+# Raw evidence: commit only redacted copies under docs/proof/
+docs/proof/raw/
+*.har
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
